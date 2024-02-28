@@ -3,7 +3,7 @@
 FIRMWARE_DIR := firmware
 FIRMWARE_FILES := $(wildcard $(FIRMWARE_DIR)/*.bin)
 LICENSE_FILES := $(wildcard LICENSE*)
-VERSION := 2128
+VERSION := 2128b
 NAME := scarlett2-firmware
 SPEC_FILE := $(NAME).spec
 TAR_DIR := $(NAME)-$(VERSION)

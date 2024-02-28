@@ -15,9 +15,14 @@ interfaces:
 - Scarlett 4th Gen Solo
 - Scarlett 4th Gen 2i2
 - Scarlett 4th Gen 4i4
+- Clarett 2Pre USB
+- Clarett 4Pre USB
+- Clarett 8Pre USB
 - Clarett+ 2Pre
 - Clarett+ 4Pre
 - Clarett+ 8Pre
+- Vocaster One
+- Vocaster Two
 
 These files are only useful with the Linux `scarlett2` firmware update
 utility: https://github.com/geoffreybennett/scarlett2

@@ -1,5 +1,5 @@
 Name:           scarlett2-firmware
-Version:        2128
+Version:        2128b
 Release:        1%{?dist}
 Summary:        Firmware for Focusrite Scarlett2 devices
 
@@ -11,8 +11,8 @@ BuildArch:      noarch
 BuildRequires:  make
 
 %description
-Firmware files for the Focusrite Scarlett 2nd, 3rd, 4th Gen, and
-Clarett+ audio interfaces.
+Firmware files for the Focusrite Scarlett 2nd, 3rd, 4th Gen, Clarett
+USB, Clarett+, and Vocaster audio interfaces.
 
 %prep
 %setup -q
@@ -31,5 +31,9 @@ install -pm 644 LICENSE.Focusrite %{buildroot}/usr/share/licenses/scarlett2-firm
 /usr/share/licenses/scarlett2-firmware
 
 %changelog
+* Wed Feb 21 2024 Geoffrey D. Bennett <g@b4.vu> - 2128b-1
+- Added Clarett USB and Vocaster firmware files.
+- Moved firmware to subdirectory.
+
 * Wed Feb 21 2024 Geoffrey D. Bennett <g@b4.vu> - 2128-1
 - Initial RPM release of the Scarlett2 firmware files.
