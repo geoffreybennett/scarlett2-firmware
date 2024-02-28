@@ -22,7 +22,7 @@ Clarett+ audio interfaces.
 
 %install
 mkdir -p %{buildroot}/usr/lib/firmware/scarlett2
-install -pm 644 *.bin %{buildroot}/usr/lib/firmware/scarlett2/
+install -pm 644 firmware/*.bin %{buildroot}/usr/lib/firmware/scarlett2/
 mkdir -p %{buildroot}/usr/share/licenses/scarlett2-firmware
 install -pm 644 LICENSE.Focusrite %{buildroot}/usr/share/licenses/scarlett2-firmware/
 

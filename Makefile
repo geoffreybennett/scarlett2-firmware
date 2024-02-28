@@ -1,6 +1,7 @@
 .PHONY: help install tar rpm clean
 
-FIRMWARE_FILES := $(wildcard *.bin)
+FIRMWARE_DIR := firmware
+FIRMWARE_FILES := $(wildcard $(FIRMWARE_DIR)/*.bin)
 LICENSE_FILES := $(wildcard LICENSE*)
 VERSION := 2128
 NAME := scarlett2-firmware
@@ -20,9 +21,9 @@ install:
 	install -d $(DESTDIR)/usr/lib/firmware/scarlett2
 	install -m 644 $(FIRMWARE_FILES) $(DESTDIR)/usr/lib/firmware/scarlett2
 
-tar: $(FIRMWARE_FILES) $(LICENSE_FILES) $(SPEC_FILE)
+tar: $(FIRMWARE_DIR) $(LICENSE_FILES) $(SPEC_FILE)
 	mkdir -p $(TAR_DIR)
-	cp -r $(FIRMWARE_FILES) $(LICENSE_FILES) $(SPEC_FILE) debian Makefile $(TAR_DIR)/
+	cp -r $(FIRMWARE_DIR) $(LICENSE_FILES) $(SPEC_FILE) debian Makefile $(TAR_DIR)/
 	tar czf $(TAR_FILE) $(TAR_DIR)
 	rm -rf $(TAR_DIR)
 
