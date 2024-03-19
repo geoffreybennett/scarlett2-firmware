@@ -10,8 +10,16 @@ interfaces:
 - Clarett+ 2Pre, 4Pre, and 8Pre
 - Vocaster One and Two
 
-These files are only useful with the Linux `scarlett2` firmware update
-utility: https://github.com/geoffreybennett/scarlett2
+These files are only useful with:
 
-Place them in `/usr/lib/firmware/scarlett2` or use the RPM/deb
-package.
+- the Linux [`scarlett2` firmware update
+  utility](https://github.com/geoffreybennett/scarlett2) and
+
+- the [ALSA Scarlett2 Control
+  Panel](https://github.com/geoffreybennett/alsa-scarlett-gui/)
+  (`alsa-scarlett-gui`).
+
+Install these files using the [RPM/deb
+package](https://github.com/geoffreybennett/scarlett2-firmware/releases),
+or just create a directory `/usr/lib/firmware/scarlett2` and copy them
+there.
