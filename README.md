@@ -23,3 +23,5 @@ Install these files using the [RPM/deb
 package](https://github.com/geoffreybennett/scarlett2-firmware/releases),
 or just create a directory `/usr/lib/firmware/scarlett2` and copy them
 there.
+- On ArchLinux you can install AUR [scarlett2-firmware-git](https://aur.archlinux.org/packages/scarlett2-firmware-git)
+package or directly [scarlett2-git](https://aur.archlinux.org/packages/scarlett2-git).
