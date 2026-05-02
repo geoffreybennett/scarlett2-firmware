@@ -22,5 +22,12 @@ These files are used by:
 
 Install these files using the [RPM/deb
 package](https://github.com/geoffreybennett/scarlett2-firmware/releases),
-or just create a directory `/usr/lib/firmware/scarlett2` and copy them
-there.
+or just create a directory `/usr/lib/firmware/scarlett2` and copy the
+contents of the `firmware` directory there.
+
+```
+mkdir -p /usr/lib/firmware/scarlett2
+git clone https://github.com/geoffreybennett/scarlett2-firmware.git
+cp scarlett2-firmware/firmware/* /usr/lib/firmware/scarlett2
+```
+
